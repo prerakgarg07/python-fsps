@@ -500,7 +500,9 @@ class StellarPopulation(object):
             duste_umin=1.0,
             duste_qpah=3.5,
             fagn=0.0,
-            agn_tau=10.0
+            agn_tau=10.0,
+            gas_nh=100.0,
+            neb_pagb=1.0
         )
 
         # Parse any input options.
@@ -1172,7 +1174,7 @@ class ParameterSet(object):
                   "sf_start", "sf_trunc", "sf_slope", "duste_gamma",
                   "duste_umin", "duste_qpah", "sigma_smooth",
                   "min_wave_smooth", "max_wave_smooth", "gas_logu",
-                  "gas_logz", "igm_factor", "fagn", "agn_tau"]
+                  "gas_logz", "igm_factor", "fagn", "agn_tau","gas_nh","neb_pagb"]
 
     @property
     def all_params(self):
