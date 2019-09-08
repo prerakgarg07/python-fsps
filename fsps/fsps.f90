@@ -97,7 +97,7 @@ contains
                             dust1_index,sf_start,sf_trunc,sf_slope,&
                             duste_gamma,duste_umin,duste_qpah,&
                             sigma_smooth,min_wave_smooth,max_wave_smooth,&
-                            gas_logu,gas_logz,igm_factor,fagn,agn_tau)
+                            gas_logu,gas_logz,igm_factor,fagn,agn_tau,gas_nh,neb_pagb)
 
     ! Set all the parameters that don't affect the SSP computation.
 
@@ -115,7 +115,7 @@ contains
                             dust1_index,sf_start,sf_trunc,sf_slope,&
                             duste_gamma,duste_umin,duste_qpah,&
                             sigma_smooth,min_wave_smooth,max_wave_smooth,&
-                            gas_logu,gas_logz,igm_factor,fagn,agn_tau
+                            gas_logu,gas_logz,igm_factor,fagn,agn_tau,gas_nh,neb_pagb
 
     smooth_velocity=smooth_velocity0
     redshift_colors=redshift_colors0
@@ -163,6 +163,8 @@ contains
     pset%max_wave_smooth=max_wave_smooth
     pset%gas_logu=gas_logu
     pset%gas_logz=gas_logz
+    pset%gas_nh=gas_nh
+    pset%neb_pagb =neb_pagb
     pset%igm_factor=igm_factor
     pset%fagn=fagn
     pset%agn_tau=agn_tau
